@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <script
+      src="https://kit.fontawesome.com/893f38d450.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <picture>
+        <source
+          media="(max-width: 375px)"
+          srcset="assets/images/illustration-sign-up-mobile.svg"
+        />
+        <source
+          media="(max-width: 1440px)"
+          srcset="assets/images/illustration-sign-up-desktop.svg"
+        />
+        <img src="assets/images/illustration-sign-up-desktop.svg" />
+      </picture>
+
+      <section>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ of project managers receiving monthly updates on:</p>
+        <ul class="fa-ul" id="updates">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Product discovery and building what matters
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >Measuring to ensure updates are a success
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-circle-check"></i></span
+            >And much more!
+          </li>
+        </ul>
+
+        <form onsubmit="return false" id="form">
+          <label data-="Valid email required">
+            Email address<span class="invalid-msg">Valid email required</span>
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="email@company.com"
+            />
+          </label>
+          <button class="sub-btn" type="submit">
+            Subscribe to montly newsletter
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <section class="success hidden">
+      <i id="thanksIcon" class="fa-solid fa-circle-check"></i>
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span class="inputValue bold">example@company.com.</span>
+        Please open it and click the button inside to comfirm your subscrition.
+      </p>
+      <button class="dismiss">Dismiss message</button>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

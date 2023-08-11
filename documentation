@@ -1,0 +1,25 @@
+Your users should be able to:
+    Add their email and submit the form
+    - See a success message with their email after successfully submitting the form
+    - See form validation messages if:
+    - The field is left empty
+    - The email address is not formatted correctly
+    - View the optimal layout for the interface depending on their device's screen size
+    - See hover and focus states for all interactive elements on the page
+
+
+problem 
+    - See a success message with their email after successfully submitting the form
+
+sub-problem
+    - How to validate a form with js
+        answer: using onsubmit attribute
+    - how to cpture input value on submit
+        answer: call
+        function func() {
+        console.log(document.getElementById("number").value)
+        }
+    - How to use a js string in HTML
+        answer: 
+            var tag_id = document.getElementById('tagid');
+            tag_id.innerHTML = 'HTML string';

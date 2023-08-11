@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+picture {
+  min-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  background: white;
+}
+
+section {
+  min-width: 100%;
+  padding: 0 20px;
+}
+
+section h1 {
+  margin: 20px 0;
+  font-size: 2.3rem;
+  color: #040434;
+}
+
+li {
+  margin: 15px;
+  list-style-type: none;
+}
+
+.fa-li {
+  color: rgb(184, 76, 76);
+}
+
+form {
+  margin: 25px 0;
+}
+
+form * {
+  display: block;
+}
+
+label {
+  color: #040434;
+  font-weight: bolder;
+}
+
+.invalid-msg {
+  float: right;
+  color: rgb(231, 121, 121);
+  display: none;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 0 20px;
+}
+
+input:invalid {
+  border-color: rgb(231, 121, 121);
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.sub-btn {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #040434;
+}
+
+.success {
+  margin-top: 50%;
+  background: white;
+}
+
+#thanksIcon {
+  color: rgb(184, 76, 76);
+  font-size: 3rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.dismiss {
+  display: block;
+  background: #040434;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  margin: 70% 0 20px;
+}
+
+.hidden {
+  display: none;
+}
