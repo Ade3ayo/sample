@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-  background: rgb(61, 16, 16);
+  background: white;
 }
 
 .section1 {
@@ -28,7 +28,7 @@ li {
 }
 
 .fa-li {
-  color: rgb(184, 76, 76);
+  color: hsl(4, 100%, 67%);
 }
 
 form {
@@ -46,7 +46,11 @@ label {
 
 .invalid-msg {
   float: right;
-  color: rgb(231, 121, 121);
+  color: hsl(4, 100%, 67%);
+}
+
+input:focus:invalid {
+  outline: none;
 }
 
 input {
@@ -76,7 +80,7 @@ input {
 }
 
 #thanksIcon {
-  color: rgb(184, 76, 76);
+  color: hsl(4, 100%, 67%);
   font-size: 3rem;
 }
 
@@ -103,7 +107,7 @@ input {
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   body {
     background: hsl(234, 29%, 20%);
     display: flex;
@@ -134,18 +138,23 @@ input {
   }
 
   .success {
-    width: 375px;
-    height: 375px;
     border-radius: 20px;
-    padding: 23px;
+    width: 400px;
+    padding: 30px;
     margin: 0;
+  }
+
+  .success h1 {
+    font-size: 3rem;
+    color: #040434;
+    margin: 10px 0;
   }
 
   .dismiss {
     margin: 30px 0 0 0;
   }
 
-  .dismiss :hover {
-    background: rgb(184, 76, 76);
+  .dismiss:hover {
+    background: hsl(4, 100%, 67%);
   }
 }
