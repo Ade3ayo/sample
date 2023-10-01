@@ -34,7 +34,7 @@
         <img src="assets/images/illustration-sign-up-desktop.svg" />
       </picture>
 
-      <section>
+      <section class="section1">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ of project managers receiving monthly updates on:</p>
         <ul class="fa-ul" id="updates">
@@ -53,8 +53,10 @@
         </ul>
 
         <form onsubmit="return false" id="form">
-          <label data-="Valid email required">
-            Email address<span class="invalid-msg">Valid email required</span>
+          <label>
+            Email address<span class="invalid-msg hidden"
+              >Valid email required</span
+            >
             <input
               type="email"
               required

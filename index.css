@@ -8,28 +8,22 @@ body {
   font-size: 16px;
 }
 
-picture {
-  min-width: 100%;
-}
-
 .wrapper {
-  width: 100%;
-  background: white;
+  background: rgb(61, 16, 16);
 }
 
-section {
-  min-width: 100%;
+.section1 {
   padding: 0 20px;
+  line-height: 2;
 }
 
-section h1 {
-  margin: 20px 0;
-  font-size: 2.3rem;
+.section1 h1 {
+  font-size: 2.5rem;
   color: #040434;
 }
 
 li {
-  margin: 15px;
+  margin: 15px 0;
   list-style-type: none;
 }
 
@@ -53,7 +47,6 @@ label {
 .invalid-msg {
   float: right;
   color: rgb(231, 121, 121);
-  display: none;
 }
 
 input {
@@ -64,11 +57,6 @@ input {
   border-radius: 10px;
   border: 1px solid lightgray;
   padding: 0 20px;
-}
-
-input:invalid {
-  border-color: rgb(231, 121, 121);
-  background-color: rgba(255, 0, 0, 0.05);
 }
 
 .sub-btn {
@@ -107,8 +95,57 @@ input:invalid {
   text-align: center;
   line-height: 50px;
   margin: 70% 0 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .hidden {
   display: none;
+}
+
+@media (min-width: 800px) {
+  body {
+    background: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .section1 {
+    padding: 30px;
+    height: 100%;
+
+    margin: auto 0;
+  }
+
+  .section1 h1 {
+    font-size: 4rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .success {
+    width: 375px;
+    height: 375px;
+    border-radius: 20px;
+    padding: 23px;
+    margin: 0;
+  }
+
+  .dismiss {
+    margin: 30px 0 0 0;
+  }
+
+  .dismiss :hover {
+    background: rgb(184, 76, 76);
+  }
 }
